@@ -4,7 +4,7 @@
 {{error}}
 {% endif %}
 
-<form action="{% url 'signup' %}" method="post">
+<form action="{% url 'accounts:signup' %}" method="post">
   {% csrf_token %}
   <p>username</p>
   <input type="text" name="username" value="">
